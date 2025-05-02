@@ -1,4 +1,7 @@
 h1 {
-    font-family: "Cormorant SC", serif;
-    font-weight:300;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600; /* You can use 400 for regular or 600 for semi-bold */
+    font-size: 2.5em;  /* Adjust the size as needed */
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
 }

@@ -1,7 +1,9 @@
-h1 {
-    font-family: 'Cormorant SC', serif;
-    font-weight: 600; /* You can use 400 for regular or 600 for semi-bold */
-    font-size: 2.5em;  /* Adjust the size as needed */
-    margin-bottom: 20px;
-    letter-spacing: 0.05em;
+@import url('https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ h1 {
+    font-family: 'Oxanium',
 }

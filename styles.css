@@ -18,28 +18,28 @@ p {
     color: #000;
     text-align: justify;
     font-size:0.7em;
-    padding-left:140px;
-    padding-right:140px;
+    padding-left:18%;
+    padding-right:18%;
 }
 
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 11%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #000;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 1.5%;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 5% 5% 5% 5%;
     text-decoration: none;
     font-family: 'UnifrakturMaguntia', serif;
     text-align:center;
-    font-size: 25px;
+    font-size: 1.25em;
     color: #818181;
     display: block;
   }
@@ -56,16 +56,16 @@ p {
 }
 
 .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
+    margin-left: 11%; /* Same as the width of the sidenav */
+    font-size: 1.5em; /* Increased text to enable scrolling */
+    padding: 0% 1%;
   }
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 10%;}
+    .sidenav a {font-size: 1em;}
   }
 
 .indent {
-    text-indent:40px;
+    text-indent:7%;
 }

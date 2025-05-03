@@ -13,6 +13,16 @@ h2 {
     font-size:1.3em;
 }
 
+h3 {
+    font-family: 'Old Standard TT', serif;
+    color: #000;
+    text-align: center;
+    font-size:1em;
+    font-weight:300;
+    padding-left:18%;
+    padding-right:18%;
+}
+
 p {
     font-family: 'Noto Sans', sans-serif;
     color: #000;
@@ -73,4 +83,9 @@ p {
 .highlight {
     color:#ff0000;
     font-style: italic;
+}
+
+.copyright {
+    font-size:0.5em;
+    text-align:center;
 }

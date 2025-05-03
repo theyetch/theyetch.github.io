@@ -69,3 +69,8 @@ p {
 .indent {
     text-indent:7%;
 }
+
+.highlight {
+    color:#ff0000;
+    font-style: italic;
+}

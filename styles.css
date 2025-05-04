@@ -89,3 +89,21 @@ p {
     font-size:0.5em;
     text-align:center;
 }
+
+.container {
+    display: flex; /* Enable flex container */
+    padding-left:18%;
+    padding-right:18%;
+  }
+  
+  .column {
+    flex: 1; /* Each column takes up equal available space */
+  }
+
+.columnheader {
+    text-align:center;
+}
+
+.columntext {
+    text-align:justify;
+}

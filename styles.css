@@ -32,50 +32,6 @@ p {
     padding-right:18%;
 }
 
-.sidenav {
-    height: 100%;
-    width: 11%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    overflow-x: hidden;
-    padding-top: 1.5%;
-}
-
-.sidenav a {
-    padding: 5% 5% 5% 5%;
-    text-decoration: none;
-    font-family: 'UnifrakturMaguntia', serif;
-    text-align:center;
-    font-size: 1.25em;
-    color: #818181;
-    display: block;
-  }
-
-.sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-.sidenavicon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-.main {
-    margin-left: 11%; /* Same as the width of the sidenav */
-    font-size: 1.5em; /* Increased text to enable scrolling */
-    padding: 0% 1%;
-  }
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 10%;}
-    .sidenav a {font-size: 1em;}
-  }
-
 .indent {
     text-indent:7%;
 }
@@ -106,4 +62,78 @@ p {
 
 .columntext {
     text-align:justify;
+}
+
+.sidenav {
+    /* Default styles for larger screens */
+    height: 100%;
+    width: 11%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 1.5%;
+    text-align: center; /* Center items horizontally by default */
+}
+
+.sidenav a {
+    padding: 5% 5% 5% 5%;
+    text-decoration: none;
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 1.25em;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenavicon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.main {
+    margin-left: 11%; /* Same as the width of the sidenav */
+    font-size: 1.5em; /* Increased text to enable scrolling */
+    padding: 0% 1%;
+}
+
+/* Media query for screens with a maximum width of 600 pixels (typical mobile devices) */
+@media screen and (max-width: 600px) {
+    .sidenav {
+        position: static; /* Remove fixed positioning */
+        width: 100%; /* Make it take the full width */
+        height: auto; /* Adjust height to content */
+        padding-top: 0; /* Reset top padding */
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-direction: row; /* Arrange items in a row */
+        align-items: center; /* Vertically align items in the center */
+        justify-content: space-around; /* Distribute space evenly around items */
+    }
+
+    .sidenav a {
+        padding: 3% 2%; /* Adjust padding for smaller screens */
+        font-size: 1em; /* Adjust font size for smaller screens */
+        text-align: center; /* Ensure text remains centered */
+    }
+
+    .sidenavicon {
+        display: none; /* Optionally hide the icon on mobile */
+    }
+
+    .main {
+        margin-left: 0; /* Reset left margin */
+        padding-top: 1%; /* Add some top padding to separate from the nav */
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 0;} /* Adjust top padding for very short screens */
+    .sidenav a {font-size: 1em;}
 }

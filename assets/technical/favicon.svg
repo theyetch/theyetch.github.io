@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.99992mm"
+   height="31.999975mm"
+   viewBox="0 0 31.99992 31.999975"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:209.364px;line-height:1.1;font-family:'Uncial Antiqua';-inkscape-font-specification:'Uncial Antiqua';text-align:center;letter-spacing:1.9628px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:1.09978;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       x="13.154228"
+       y="19.562555"
+       id="text2"
+       transform="scale(0.92824223,1.077305)"><tspan
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Luminari;-inkscape-font-specification:Luminari;fill:#000000;stroke:#000000;stroke-width:1.09978;stroke-dasharray:none;stroke-opacity:1"
+         x="14.135629"
+         y="19.562555">.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.2208px;line-height:1.1;font-family:'Uncial Antiqua';-inkscape-font-specification:'Uncial Antiqua';text-align:center;letter-spacing:0.208319px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.309271;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       x="14.825191"
+       y="25.83819"
+       id="text1"
+       transform="matrix(0.96898342,-0.08841338,0.10536336,1.0223957,0,0)"><tspan
+         id="tspan1"
+         style="fill:#ffffff;stroke:none;stroke-width:0.309271;stroke-dasharray:none;stroke-opacity:1"
+         x="14.92935"
+         y="25.83819">Y</tspan></text>
+  </g>
+</svg>

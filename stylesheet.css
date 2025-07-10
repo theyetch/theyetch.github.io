@@ -1,0 +1,174 @@
+/*cormorant infant weight: 300-700*/
+/*source sans 3 weight: 200-900*/
+/*noto sans weight: 100-900*/
+
+body {
+    background-color: rgb(251 249 245);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body.lander {
+    background-image: url(assets/photos/brandts-cormorants.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+h1 {
+    font-family: "Cormorant Infant", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+  }
+h1.title {
+    font-family: "Uncial Antiqua", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+}
+
+
+h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3em;
+  }
+
+h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-size:1em;
+  }
+
+p {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:0.9em;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+a:link {
+    color:#000000
+}
+
+a:visited {
+    color:#000000
+}
+
+a:hover {
+    color:#000000
+}
+
+a:active {
+    color:#000000
+}
+
+a.barebones {
+  text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.scrollable-container {
+    position:absolute;
+    height: 30%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    top: 36%;
+    left: 51%;
+}
+
+.hidden-bar-webkit::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Base style for the text element */
+.dynamic-text {
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+/* Style when it's a link */
+.dynamic-text.is-link {
+    color: #000000; /* Blue color for links */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dynamic-text.is-link:hover {
+    color: #000000;
+}
+
+.dynamic-text-item { /* Changed from .dynamic-text to match your new class name */
+    color: #000000;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.image-text-container {
+    padding-left:1%;
+    padding-right: 1%;
+    display: flex; /* Enables Flexbox for the container */
+    align-items: flex-start; /* Aligns items to the top (you can use 'center' or 'stretch' too) */
+    margin-bottom: 3%; /* Adds space between each image-text pair */
+    gap: 1.5%; /* Creates space between the image and the text box */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+  }
+  
+  .image-text-container img {
+    max-width: 50%; /* Image takes up to 50% of the container width */
+    height: auto; /* Maintains aspect ratio */
+    flex-shrink: 0; /* Prevents image from shrinking if text is very long */
+  }
+  
+  .text-box {
+    flex: 1; /* Allows the text box to take up the remaining space */
+    padding: 1.5%; /* Adds some internal spacing */
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+    /*
+      The magic for matching image height:
+      By default, flex items with 'align-items: stretch' (the default) will
+      stretch to fill the height of the tallest sibling. If you have different
+      height images, you might need JavaScript for perfect pixel matching,
+      but Flexbox often gets you very close for practical purposes.
+    */
+    display: flex; /* Make text-box a flex container */
+    flex-direction: column; /* Stack content vertically inside text-box */
+    justify-content: center; /* Center content vertically if there's extra space */
+    min-height: 10%; /* Set a minimum height if images are very small, adjust as needed */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .image-text-container {
+      flex-direction: column; /* Stacks image and text vertically on small screens */
+      align-items: center; /* Centers items when stacked */
+    }
+  
+    .image-text-container img {
+      max-width: 100%; /* Image takes full width on small screens */
+    }
+  
+    .text-box {
+      width: 100%; /* Text box takes full width */
+    }
+  }
